@@ -1,0 +1,58 @@
+<div th:fragment="navbar" class="nav" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<!--  <div class="nav">-->
+<!--    <div class="logo-wrap grow">-->
+<!--      <div class="icon">-->
+<!--        <img src="/images/dustBunny.png" alt="icon">-->
+<!--      </div>-->
+<!--      &lt;!&ndash;        <div class="nav-logo-short hidden">D&DB</div>&ndash;&gt;-->
+<!--      <div class="logo grow">-->
+<!--        <h2 class="nav-logo grow">Dungeons & Dust Bunnies</h2>-->
+<!--      </div>-->
+<!--    </div>-->
+
+    <div class="menu-wrap">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/about}">About</a>
+<!--        <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>-->
+<!--        <li sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>-->
+<!--        <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>-->
+<!--        <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>-->
+<!--      </ul>-->
+<!--      <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">-->
+<!--        <button class="logout-btn">#</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--    <div id="menuToggle">-->
+<!--      <input type="checkbox" />-->
+<!--      <div id="menuOverlay"></div>-->
+<!--      <span></span>-->
+<!--      <span></span>-->
+<!--      <span></span>-->
+<!--&lt;!&ndash;      <ul id="menu">&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="nav-welcome-username" sec:authorize="isAuthenticated()">Welcome, @<strong th:text="${#authentication.name}"></strong></li>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a th:href="@{/}"><li>Home</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a sec:authorize="!isAuthenticated()" th:href="@{/login}"><li class="nav-drodown-li">Login</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a sec:authorize="isAuthenticated()" id="logOutButtonDD"><li>Logout</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a sec:authorize="isAuthenticated()" th:href="@{/profile}"><li>Profile</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a sec:authorize="!isAuthenticated()" th:href="@{/register}"><li>Register</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        <a th:href="@{/about}"><li>About Me</li></a>&ndash;&gt;-->
+<!--&lt;!&ndash;      </ul>&ndash;&gt;-->
+<!--    </div>-->
+
+
+
+<!--    <script>-->
+<!--      const logOutForm = document.getElementById('logOutForm')-->
+<!--      const logOutButton = document.getElementById('logOutButton')-->
+<!--      const logOutButtonDD = document.getElementById('logOutButtonDD')-->
+<!--      logOutButton.addEventListener('click', () => {-->
+<!--        logOutForm.submit()-->
+<!--      })-->
+<!--      logOutButtonDD.addEventListener('click', () => {-->
+<!--        logOutForm.submit()-->
+<!--      })-->
+
+<!--    </script>-->
+  </div>
+</div>
