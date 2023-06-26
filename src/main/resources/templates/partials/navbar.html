@@ -12,13 +12,14 @@
 <!--    </div>-->
 
     <div class="menu-wrap">
-        <a th:href="@{/}">Home</a>
-        <a th:href="@{/about}">About</a>
-<!--        <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>-->
-<!--        <li sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>-->
-<!--        <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>-->
-<!--        <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>-->
-<!--      </ul>-->
+        <ul>
+        <li><a th:href="@{/}">Home</a></li>
+        <li><a th:href="@{/about}">About</a></li>
+        <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>
+        <li sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>
+        <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>
+        <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>
+      </ul>
 <!--      <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">-->
 <!--        <button class="logout-btn">#</button>-->
 <!--      </form>-->
