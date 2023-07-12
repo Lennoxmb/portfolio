@@ -1,73 +1,30 @@
-:root {
-    --primary: #320101;
-    --secondary: #9a0101;
-    --lettering: #320101;
-    --secondLettering: #fff;
-
-
-
+#type-css {
+    position: absolute;
+}
+#type-css h1 {
+    overflow: hidden;
+    line-height: 1;
+    white-space: nowrap;
+    border-right: 3px solid #fff;
+    animation: text 3.5s steps(35, end), cursor 1s step-end infinite;
 }
 
-
-#wrapper {
-    background: url(https://cdn.discordapp.com/attachments/415980182021603329/1121939307511414876/Z.png);
-    color: #273252;
-    /* font-weight: 700; */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+@keyframes text {
+    from { width: 0; }
+    to { width: 100%; }
 }
-/* navbar*/
-.navbar, .navbar-inverse {
-    background: var(--primary);
-    color: var(--secondary);
-    letter-spacing: 1px;
-    border: 5px var(--secondary) solid;
+@keyframes cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
 }
 
-/* PFP BOX*/
-.profile-avatar-wrapper {
-    background: rgb(83 18 18);
-    border: inset;
-    border-color: #e25454;
+#type-js {
+    display: inline-block;
+    line-height: 1;
+    border-right: 3px solid #fff;
+    animation: cursor 1s step-end infinite;
 }
-
-/* user name*/
-.panel-heading a {
-    color: #fff;
+@keyframes cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
 }
-
-/* USER PREMIUM */
-.profile-header-wrapper .element-disabled {
-    color: #c9b4b4;
-    opacity: 1;
-}
-
-
-/* USER INFO*/
-.profile-header-normal-status {
-    background: rgb(50 1 1 / 70%);
-    color: #f00;
-    height: 110px;
-    padding-top: 10px;
-    border: 5px #9a0101 solid;
-}
-
-
-/* head color and text color*/
-.panel-heading {
-    background: var(--primary);
-    color: #ffffff;
-    letter-spacing: 0.03em;
-    text-shadow: 2px 2px 5px var(--secondary);
-}
-
-/*TABS*/
-.nav-tabs li {
-    width: 20%;
-    background: var(--primary);
-    text-align: center;
-    letter-spacing: 2px;
-    border: 5px #9a0101 solid;
-}
-
