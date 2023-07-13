@@ -4,21 +4,6 @@
 <body>
 <nav th:insert="~{partials/navbar :: navbar}"></nav>
 <h1>HELLO WORLD</h1>
-<h3 id="type-js"></h3>
+<p>About me</p>
 </body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let letter = 0;
-        const text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Ab aliquam asperiores cupiditate debitis delectus ducimus, enim est ex ipsa ipsum laborum magni minus perspiciatis possimus quaerat quidem ullam unde veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta eaque et eveniet, modi nisi odio perferendis perspiciatis provident quod, similique suscipit tempore, voluptas! Aliquid cum ducimus quae quas voluptate.";
-        function typeText() {
-            if (letter < text.length) {
-                document.getElementById("type-js").innerHTML += text.charAt(letter);
-                letter++;
-                let speed = Math.floor(Math.random() * 150) + 50;
-                setTimeout(typeText, speed);
-            }
-        }
-        typeText();
-    });
-</script>
 </html>
