@@ -49,7 +49,7 @@ public class UserController {
         if(password.equals(passwordConfirm)){
             password = passwordEncoder.encode(password);
             usersDao.save(new User(email, username, password));
-            return "redirect:/home";
+            return "redirect:/login";
         } else {
             return "redirect:/register";
         }
