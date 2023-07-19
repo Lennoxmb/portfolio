@@ -31,6 +31,11 @@ public class UserController {
         return "index";
     }
 
+    @GetMapping("/pizzaProject")
+    public String pizzaProject(){
+        return "pizzaProject";
+    }
+
     @GetMapping("/login")
     public String login(){
         return "login";

@@ -1,14 +1,15 @@
- <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   <head>
     <meta charset="UTF-8">
-    <title>Order Pizza</title>
+    <title>Pizza Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
+  <nav th:insert="~{partials/navbar :: navbar}"></nav>
   <!-------------------------NAV BAR TOP-------------------------->
-  <nav>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div>
+    <div class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Pizza World</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,11 +51,11 @@
           </ul>
         </div>
       </div>
-    </nav>
-  </nav>
+    </div>
+  </div>
 
   <!---------------------- HEADER IMAGE ------------------>
-  <header class="container d-flex flex-column justify-content-center text-center p-0" style="background-image: url('img/pizza_bg.png'); min-height: 346px; background-size: cover; background-position: center center">
+  <header class="container d-flex flex-column justify-content-center text-center p-0" style="background-color: aquamarine ; min-height: 346px; background-size: cover; background-position: center center">
     <h1 class="text-bg-light opacity-75">Welcome to Pizza World!</h1>
   </header>
   <div class="container pt-5">
