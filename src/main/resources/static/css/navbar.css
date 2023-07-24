@@ -3,21 +3,19 @@
 }
 
 .nav {
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*z-index: 5;*/
     display: flex;
     justify-content: end;
-    /* align-items: stretch; */
     height: 11vh;
     width: 100vw;
-    /* color: #fff; */
     font-family: Poppin, Inter, sans-serif;
     font-size: 1.3rem;
     background: rgba(0, 0, 0, .2);
 }
 
+.projectDrop {
+    padding: 10px;
+    cursor: pointer;
+}
 
 .menu-wrap {
     display: flex;
