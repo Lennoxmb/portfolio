@@ -8,10 +8,15 @@
     <link rel="stylesheet" th:href="@{/css/global.css}">
     <link rel="stylesheet" th:href="@{/css/landing.css}">
     <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/pizzaProject.css}">
   </head>
   <body>
   <nav th:insert="~{partials/navbar :: navbar}"></nav>
   <!-------------------------NAV BAR TOP-------------------------->
+
+<!--  description of project -->
+  <h1>Pizza Project</h1>
+  <p>This project aims to create a pizza ordering form using Bootstrap components. The webpage, "order-pizza.html," will feature a main navigation bar, a custom jumbotron-like component, and tabs for pizza selection. Users can choose the pizza size and crust from cards with radio buttons, and further customize their order with panels for selecting cheese, sauce, and toppings using checkboxes. The design will be responsive, ensuring a seamless experience across various devices.</p>
   <div>
     <div class="navbar navbar-expand-lg bg-body-tertiary" style="z-index: -1">
       <div class="container-fluid">
@@ -63,7 +68,7 @@
 
   <!-----------------MAIN SELECTION CONTAINER---------->
   <div class="container mb-4">
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs pizzaSelect">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
