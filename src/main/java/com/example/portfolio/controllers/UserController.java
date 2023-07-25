@@ -36,6 +36,14 @@ public class UserController {
         return "pizzaProject";
     }
 
+    @GetMapping("/codeupProject")
+    public String codeupProject(){
+        return "codeupProject";
+    }
+
+
+
+
     @GetMapping("/login")
     public String login(){
         return "login";

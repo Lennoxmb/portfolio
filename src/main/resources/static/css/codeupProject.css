@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Abel', sans-serif;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.codeupProjectNavbar {
+    padding: 0px;
+    background-color: #F0F0F0;
+}
+
+.mainText {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: 'Anton', sans-serif;
+    font-size: xxx-large;
+}
+
+.city {
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    padding-bottom: 35px;
+}
+
+.design {
+    background-color: #E6573B;
+
+
+}
+
+.develop {
+    background-color: #EC9C39;
+}
+
+.support {
+    background-color: #7BB06C;
+}
+
+.host {
+    background-color: #02AAA9;
+}
+
+.fourCircles {
+    display: flex;
+    flex: 0 1 0;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    border: 4px solid white;
+    color: white;
+    margin: 50px 10px;
+}
+
+.paddingBottom {
+    padding-bottom: 15px;
+}
+
+.mainImage {
+    border: 3px solid #E6E6E6;
+}
+
+.secondColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondImage {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+.nextColumn {
+    margin-bottom: 35px;
+}
+
+.spaceAbove {
+    margin-top: 35px;
+}
+
+.border-top {
+    margin-top: 20px;
+}
+
+.pictureCircles {
+    display: flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: #02AAA9;
+}
+
+.featuredLine {
+    display: flex;
+    flex-direction: row;
+}
+
+.boldFont {
+    font-family: 'Anton', sans-serif;
+
+}
