@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-* {
-    background-color: #F0F0F0;
-}
 
 body {
     background-color: #F0F0F0;
@@ -16,8 +13,9 @@ body {
     margin-right: 15px;
 }
 
-.navbar {
+.codeupProjectNavbar {
     padding: 0px;
+    background-color: #F0F0F0;
 }
 
 .mainText {
