@@ -41,7 +41,10 @@ public class UserController {
         return "codeupProject";
     }
 
-
+    @GetMapping("/coffeeProject")
+    public String coffeeProject(){
+        return "coffeeProject";
+    }
 
 
     @GetMapping("/login")
