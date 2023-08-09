@@ -46,6 +46,11 @@ public class UserController {
         return "coffeeProject";
     }
 
+    @GetMapping("/konamiProject")
+    public String konamiProject(){return "KonamiProject";}
+
+
+
 
     @GetMapping("/login")
     public String login(){
