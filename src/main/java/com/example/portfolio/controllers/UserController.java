@@ -49,6 +49,8 @@ public class UserController {
     @GetMapping("/konamiProject")
     public String konamiProject(){return "KonamiProject";}
 
+    @GetMapping("/weathermap")
+    public String weathermap(){return "weathermap";}
 
 
 
