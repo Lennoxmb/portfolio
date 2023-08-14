@@ -52,6 +52,8 @@ public class UserController {
     @GetMapping("/weathermap")
     public String weathermap(){return "weathermap";}
 
+    @GetMapping("/movieproject")
+    public String movieproject(){return "movieproject";}
 
 
     @GetMapping("/login")
