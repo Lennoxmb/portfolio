@@ -19,7 +19,7 @@ public class SecurityConfig {
         return http.authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/profile", "/profile/**", "/edit/profile").authenticated()
                         .requestMatchers("/register", "/login", "/home", "/", "/about", "/contact", "/send-email", "/welcome", "/error", "/pizzaProject", "/codeupProject", "/coffeeProject", "/konamiProject", "/weathermap", "/movieproject").permitAll()
-                        .requestMatchers("/css/**", "../static/js/**", "/js/**", "/images/**", "/keys.js").permitAll()
+                        .requestMatchers("/css/**", "/js/**", "/images/**", "/keys.js").permitAll()
                 )
                 .formLogin((login) -> login.loginPage("/login").defaultSuccessUrl("/profile"))
                 .logout((logout) -> logout.logoutSuccessUrl("/home"))

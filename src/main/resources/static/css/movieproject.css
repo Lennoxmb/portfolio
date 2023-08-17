@@ -1,0 +1,8 @@
+h1 {
+    color: green;
+}
+
+.heading {
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
