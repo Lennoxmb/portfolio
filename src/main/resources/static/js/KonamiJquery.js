@@ -27,8 +27,8 @@ document.addEventListener('keyup', function(e) {
 });
 
 function addLives() {
-    document.body.style.backgroundImage = "url('img/victoryGus')";
-    let audio = new Audio('img/ff-victory.mp3');
+    document.body.style.backgroundImage = "url('images/victoryGus')";
+    let audio = new Audio('images/ff-victory.mp3');
     audio.play();
     setTimeout(function(){alert("You have added 30 lives!");}, 100);
 }
