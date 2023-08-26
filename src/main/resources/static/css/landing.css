@@ -1,3 +1,41 @@
-.hidden {
-    display: none;
+body {
+    background-color: #B1EDD0;
+}
+
+.firstMeContainer {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #ffffff;
+    height: 65vh;
+    margin: 4em 12em;
+    border-radius: 1.5em;
+
+}
+
+.meRow {
+    align-items: center;
+}
+
+.headShot {
+    border-radius: 50%;
+    height: 60vh;
+    width: auto;
+    object-fit: cover;
+}
+
+.column {
+    /* Existing styles for columns */
+    flex: 1;
+    padding: 1em; /* Add padding to create space */
+}
+
+.pictureColumn {
+    /* Existing styles for picture column */
+    margin-right: 2em; /* Add margin to the right */
+}
+
+.textMeRowColumn {
+    /* Existing styles for text column */
+    margin-left: 2em; /* Add margin to the left */
 }

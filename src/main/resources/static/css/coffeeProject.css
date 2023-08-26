@@ -189,6 +189,10 @@ select {
     border-radius: 5px;
 }
 
+.mainRows {
+    max-width: none;
+}
+
 /*----online order container end----*/
 
 
