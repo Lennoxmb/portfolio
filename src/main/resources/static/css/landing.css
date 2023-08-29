@@ -10,11 +10,13 @@ body {
     height: 65vh;
     margin: 4em 12em;
     border-radius: 1.5em;
+    min-width: fit-content;
 
 }
 
 .meRow {
     align-items: center;
+    min-width: fit-content;
 }
 
 .headShot {
@@ -31,13 +33,22 @@ body {
 }
 
 .pictureColumn {
-    /* Existing styles for picture column */
-    margin-right: 2em; /* Add margin to the right */
+    margin-right: 2em;
+    max-width: fit-content;
 }
 
 .textMeRowColumn {
     /* Existing styles for text column */
     margin-left: 2em; /* Add margin to the left */
+}
+
+.socialPlacement {
+    display: flex;
+    justify-content: end;
+}
+
+.socialLink {
+    margin: 0 0.2em;
 }
 
 /*second about me part*/
@@ -49,4 +60,41 @@ body {
     height: 65vh;
     margin: 0 12em;
     border-radius: 1.5em;
+}
+
+
+@media (min-width: 30rem) and (max-width: 65rem) {
+    .firstMeContainer {
+        min-height: fit-content;
+        height: 100%;
+        margin: 50px;
+    }
+
+  .meRow {
+      flex-direction: column;
+  }
+
+    .pictureColumn {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+    .firstMeContainer {
+        min-height: fit-content;
+        height: 100%;
+        margin: 50px;
+
+    }
+
+    .meRow {
+        flex-direction: column;
+    }
+
+    .pictureColumn {
+        margin: 0;
+    }
+
+
 }
