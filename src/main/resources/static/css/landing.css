@@ -39,3 +39,14 @@ body {
     /* Existing styles for text column */
     margin-left: 2em; /* Add margin to the left */
 }
+
+/*second about me part*/
+.secondContainerAbout {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download.jpg");
+    height: 65vh;
+    margin: 0 12em;
+    border-radius: 1.5em;
+}
