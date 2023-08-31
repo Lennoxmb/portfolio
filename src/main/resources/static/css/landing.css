@@ -24,6 +24,7 @@ body {
     height: 60vh;
     width: auto;
     object-fit: cover;
+    border: solid 5px black;
 }
 
 .column {
@@ -49,6 +50,21 @@ body {
 
 .socialLink {
     margin: 0 0.2em;
+}
+
+.ResumeDownload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    padding-right: 10px;
+    background: #127EB8;
+    color: white;
+    border-radius: 10%;
+}
+
+.downloadLinkImage {
+    width: 2em;
 }
 
 /*second about me part*/
