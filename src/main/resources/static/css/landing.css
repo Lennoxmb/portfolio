@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,900;0,1000;1,800;1,900;1,1000&display=swap');
+
 body {
     background-color: #B1EDD0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .firstMeContainer {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     background-color: #ffffff;
     height: 65vh;
-    margin: 4em 12em;
+    margin: 2em 5em;
     border-radius: 1.5em;
     min-width: fit-content;
 
@@ -16,6 +18,11 @@ body {
 
 .meRow {
     align-items: center;
+    min-width: fit-content;
+}
+
+.meRowTwo {
+    text-align: center;
     min-width: fit-content;
 }
 
@@ -28,9 +35,8 @@ body {
 }
 
 .column {
-    /* Existing styles for columns */
     flex: 1;
-    padding: 1em; /* Add padding to create space */
+    padding: 1em;
 }
 
 .pictureColumn {
@@ -39,8 +45,7 @@ body {
 }
 
 .textMeRowColumn {
-    /* Existing styles for text column */
-    margin-left: 2em; /* Add margin to the left */
+    margin-left: 2em;
 }
 
 .socialPlacement {
@@ -61,22 +66,32 @@ body {
     background: #127EB8;
     color: white;
     border-radius: 10%;
+    text-decoration: none;
 }
 
 .downloadLinkImage {
     width: 2em;
 }
 
-/*second about me part*/
 .secondContainerAbout {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download.jpg");
     height: 65vh;
-    margin: 0 12em;
+    margin: 0 5em;
     border-radius: 1.5em;
 }
+
+.skillsList:first-child {
+    margin-right: 4em;
+    margin-left: 2em;
+}
+
+.skillsList:last-child {
+    margin-left: 4em;
+    margin-right: 2em;
+}
+
 
 
 @media (min-width: 30rem) and (max-width: 65rem) {
