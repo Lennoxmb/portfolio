@@ -1,15 +1,15 @@
 <footer th:fragment="footer" xmlns:sec="http://www.w3.org/1999/xhtml">
-    <div class="container footerWrap">
-        <div class="leftFoot row">
-            <div>
+    <div class="footercontainer footerWrap">
+        <div class="leftFoot footerfooterrow" >
+            <div class="socialGap">
                 <a class="footer-link" href="https://www.linkedin.com/in/lennox-ballard/" target="_blank"><img class="link-Image" src="https://www.endupack.com/wp-content/uploads/2019/06/linkedin-icon-logo-png-transparent-1024x1024.png" alt="linkedin symbol"></a>
             </div>
-            <div>
+            <div class="socialGap">
                 <a class="footer-link" href="https://github.com/Lennoxmb" target="_blank"><img class="link-Image" src="https://www.pngall.com/wp-content/uploads/2016/04/Github-PNG-Image.png" alt="github symbol"></a>
             </div>
         </div>
 
-        <div class="middleFooter row justify-center">
+        <div class="middleFooter footerrow justify-center">
             <div>
                 <a class="footer-link" th:href="@{/}">Home</a>
             </div>
@@ -17,10 +17,10 @@
             <div>
                 <a class="footer-link" th:href="@{/}">Projects</a>
             </div>
-            <div>
                 <img class="coderImage" src="https://pluspng.com/img-png/coder-png-source-code-icon-1600.png" alt="coder symbol">
-                <a class="footer-link" sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></a>
-                <a class="footer-link" sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></a>
+            <div>
+                <a class="footer-link" sec:authorize="!isAuthenticated()"><a class="footer-link" th:href="@{/login}">Login</a></a>
+                <a class="footer-link" sec:authorize="isAuthenticated()"><a class="footer-link" id="logOutButton">Logout</a></a>
             </div>
         </div>
     </div>

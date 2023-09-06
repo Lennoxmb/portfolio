@@ -1,3 +1,25 @@
+/*globals*/
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.footerrow {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.footerrow.justify-center {
+    justify-content: center;
+}
+/*end globals*/
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +46,10 @@ footer {
     align-items: flex-start;
 }
 
+.socialGap {
+    margin: 0 0.5em;
+}
+
 .middleFooter {
     display: flex;
     align-items: center;
@@ -40,16 +66,16 @@ footer {
     padding: 25px;
 }
 
-a:hover {
+.footer-link:hover {
     color: hotpink;
     cursor: pointer;
 }
 
-a:visited {
+.footer-link:visited {
     color: #fff;
 }
 
-a:visited:hover {
+.footer-link:visited:hover {
     color: hotpink;
 }
 
@@ -71,6 +97,7 @@ a:visited:hover {
     width: 1em;
     height: 1em;
     margin: 0 0.5em;
+    align-self: center;
 }
 
 @media only screen and (max-width: 710px) {
@@ -98,8 +125,6 @@ a:visited:hover {
         gap: 5px;
         width: 30vw;
     }
-
-    c
 
 }
 
