@@ -72,6 +72,8 @@ a:hover {
     cursor: pointer;
     background-color: #6C3320;
     color: #eee;
+    margin-top: 1em;
+    position: absolute;
 }
 /*---jumbotron container end---*/
 
