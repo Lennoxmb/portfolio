@@ -20,6 +20,7 @@
 }
 /*end globals*/
 
+/*footer stays at the bottom of the page*/
 footer {
     display: flex;
     flex-wrap: wrap;

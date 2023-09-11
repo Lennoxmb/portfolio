@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html Lang="en">
 <head>
-  <title>Konami Code</title>
-  <link rel="stylesheet" th:href="@{/css/resets.css}">
-  <link rel="stylesheet" th:href="@{/css/global.css}">
-  <link rel="stylesheet" th:href="@{/css/navbar.css}">
-  <link rel="stylesheet" th:href="@{/css/footer.css}">
-  <link rel="stylesheet" href='/css/konamiProject.css'>
+    <title>Konami Code</title>
+    <link rel="stylesheet" th:href="@{/css/resets.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+    <link rel="stylesheet" href='/css/konamiProject.css'>
 </head>
 <body>
-<nav th:insert="~{partials/navbar :: navbar}"></nav>
-<h1>Konami Code</h1>
-<p>Enter the Konami Code to see a surprise!</p>
-
+<div class="page-wrapper">
+    <nav th:insert="~{partials/navbar :: navbar}"></nav>
+    <div class="synopsis">
+        <h1>Konami Code</h1>
+        <p> In this project, we created a webpage that displays a surprise when the user enters the Konami Code. The Konami Code is a cheat code that appears in many Konami video games. The code is up, up, down, down, left, right, left, right, B, A, and start, in this case, Enter. We learned about Event Listeners in JavaScript and were to make an alert come up stating the user "You have added 30 lives!" along with any customizations we wanted.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Konami Code</h1>
+        </div>
+        <div>
+            <p>Enter the Konami Code to see a surprise!</p>
+        </div>
+        <div class="victoryImage"><img src="/images/victoryGus"></div>
+    </div>
+</div>
 <footer th:insert="~{partials/footer :: footer}"></footer>
 <script src="/js/KonamiJquery.js"></script>
 </body>
