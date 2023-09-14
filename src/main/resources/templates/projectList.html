@@ -1,26 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:insert="~{partials/head :: head ('Project List')}"></head>
-
 <body>
-<nav th:insert="~{partials/navbar :: navbar}"></nav>
 <div class="page-wrapper">
+    <nav th:insert="~{partials/navbar :: navbar}"></nav>
     <div class="container">
         <div class="row">
             <div class="column">
                 <h1>Project List</h1>
-                <div class="container">
+<!--                DNDB-->
+                <div class="container projectContainer">
                     <div class="row">
-                        <div class="column">
-                            <img src="/images/coffeeProjectImage.tiff"
-                                 alt="Avatar" style="width:200px">
+                        <div class="column siteImageColumn">
+                            <img class="siteImages" src="/images/dndbimage.png"
+                                 alt="Coffee Project">
                         </div>
-                        <div class="column">
-                            <h4><b>Coffee Project</b></h4>
-                            <p>A blurb </p>
+                        <div class="column descriptionColumn">
+                            <h3><b><a href="https://dndb.me/" target="_blank">Dungeons and Dust Bunnies</a></b></h3>
+                            <p>This is my Codeup capstone project. A fully functional task management website was created by my team and I. The website uses the user's to-do list to create a battle against a monster, and when tasks are completed and crossed off, the monster takes damage until it is defeated. The website records battles and issues badges for both the quantity of battles and for every unique monster faced.</p>
                         </div>
                     </div>
                 </div>
+<!--                PIZZA-->
+                <div class="container projectContainer">
+                    <div class="row">
+                        <div class="column siteImageColumn">
+                            <img class="siteImages" src="/images/pizzaimage.png"
+                                 alt="Coffee Project">
+                        </div>
+                        <div class="column descriptionColumn">
+                            <h3><b><a th:href="@{/pizzaProject}">Pizza Project</a></b></h3>
+                            <p>In this project we used bootstrap and recreated the design that was given to us. </p>
+                        </div>
+                    </div>
+                </div>
+<!--            REACTIVE-->
+                <div class="container projectContainer">
+                    <div class="row">
+                        <div class="column siteImageColumn">
+                            <img class="siteImages" src="/images/reactiveImage.png"
+                                 alt="Coffee Project">
+                        </div>
+                        <div class="column descriptionColumn">
+                            <h3><b><a th:href="@{/codeupProject}">Reactive Project</a></b></h3>
+                            <p>This project demonstrates a responsive web design with CSS and Media Queries.  </p>
+                        </div>
+                    </div>
+                </div>
+<!--            COFFEE-->
+                <div class="container projectContainer">
+                    <div class="row">
+                        <div class="column siteImageColumn">
+                            <img class="siteImages" src="/images/coffeeimage.png"
+                                 alt="Coffee Project">
+                        </div>
+                        <div class="column descriptionColumn">
+                            <h3><b><a th:href="@{/coffeeProject}">Coffee Project</a></b></h3>
+                            <p>This project demonstrates what we learned about Javascript.  </p>
+                        </div>
+                    </div>
+                </div>
+<!--                KONAMI-->
+                <div class="container projectContainer">
+                    <div class="row">
+                        <div class="column siteImageColumn">
+                            <img class="siteImages" src="/images/konamiimage.png"
+                                 alt="Coffee Project">
+                        </div>
+                        <div class="column descriptionColumn">
+                            <h3><b><a th:href="@{/konamiProject}">Konami Project</a></b></h3>
+                            <p>We learned and demonstrated our use of JavaScript event listeners by making several things happen when entering the Konami Code.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
