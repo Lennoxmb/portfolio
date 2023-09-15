@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="partials/head :: head ('Register')"></head>
 <body>
 <div class="page-wrapper">
-  <header th:replace="partials/navbar :: navbar"></header>
-  <div class="container grow align-center justify-center" style="margin-top: 100px">
-    <div class="row justify-center align-center">
-      <div class="column register-form align-center">
-        <h1>register</h1>
-        <div th:if="${param.passwordMismatch != null}">
-          <p class="already-exists">Passwords do not match.</p>
+    <nav th:replace="partials/navbar :: navbar"></nav>
+    <div class="container align-center justify-center">
+        <div class="row justify-center align-center">
+            <div class="column register-form align-center">
+                <div class="signupLogin">
+                    <h2>Register</h2>
+                    <p><strong style="color: red;">Please note:</strong> you will not be emailed, spammed or have any benefits for creating
+                        an account. The option has been put here simply to show my ability to create a functional
+                        registry and secure log in system.</p>
+                </div>
+                <div th:if="${param.passwordMismatch != null}">
+                    <p class="already-exists">Passwords do not match.</p>
+                </div>
+                <div th:if="${param.userExists}">
+                    <p class="already-exists">Username or Email Already Registered</p>
+                </div>
+                <form th:action="@{/register}" th:method="post" class="accountForm">
+                    <label class="formLabels" for="username">Username</label>
+                    <input class="row fieldRow" type="text" id="username" name="username" required><br>
+                    <label class="formLabels" for="email">Email</label>
+                    <input class="row fieldRow" type="email" id="email" name="email" required><br>
+                    <label class="formLabels" for="password">Password</label>
+                    <input class="row fieldRow" type="password" id="password" name="password" onkeyup="passConfirm()"
+                           required><br>
+                    <label class="formLabels" for="password">Confirm Password</label>
+                    <input class="row fieldRow" type="password" id="passwordConfirmation" name="passwordConfirmation"
+                           onkeyup="passConfirm()" required><br>
+                    <div class="justify-center align-center text-center" id="message"></div>
+                    <input class="row justify-center submit login-register-Btn" type="submit" value="Sign me up !"><br>
+                    <div class="row">
+                        <a class="register-link" th:href="@{/login}">Already Registered? Login!</a>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div th:if="${param.userExists}">
-          <p class="already-exists">Username or Email Already Registered</p>
-        </div>
-        <form th:action="@{/register}" th:method="post">
-          <label for="username">Username</label><br>
-          <input class="row" type="text" id="username" name="username" required><br>
-          <label for="email">Email</label><br>
-          <input class="row" type="email" id="email" name="email" required><br>
-          <label for="password">Password</label><br>
-          <input class="row" type="password" id="password" name="password" onkeyup="passConfirm()"
-                 required><br>
-          <label for="password">Confirm Password</label><br>
-          <input class="row" type="password" id="passwordConfirmation" name="passwordConfirmation"
-                 onkeyup="passConfirm()" required><br>
-          <div class="justify-center align-center text-center" id="message"></div>
-          <input class="row justify-center submit login-register-Btn" type="submit" value="Sign me up !"><br>
-          <div class="row register-link">
-            <a th:href="@{/login}">Already Registered? Login!</a>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
 </div>
+<footer th:insert="~{partials/footer :: footer}"></footer>
 <script>
-  function passConfirm() {
-    let password = document.getElementById(`password`).value;
-    let confirmPassword = document.getElementById(`passwordConfirmation`).value;
-    let message = document.getElementById(`message`);
-    if (password === confirmPassword) {
-      message.style.color = `var(--cta)`;
-      message.style.fontWeight = '800';
-      message.style.fontSize = '1.3rem';
-      message.innerHTML = `Passwords match.`
-    } else {
-      message.style.color = `red`;
-      message.style.fontWeight = '800';
-      message.style.fontSize = '1.3rem';
-      message.innerHTML = `Passwords do not match.`
+    function passConfirm() {
+        let password = document.getElementById(`password`).value;
+        let confirmPassword = document.getElementById(`passwordConfirmation`).value;
+        let message = document.getElementById(`message`);
+        if (password === confirmPassword) {
+            message.style.color = `var(--cta)`;
+            message.style.fontWeight = '800';
+            message.style.fontSize = '1.3rem';
+            message.innerHTML = `Passwords match.`
+        } else {
+            message.style.color = `red`;
+            message.style.fontWeight = '800';
+            message.style.fontSize = '1.3rem';
+            message.innerHTML = `Passwords do not match.`
+        }
+        document.getElementById(`password`).onkeyup = passConfirm;
+        document.getElementById(`confirm_password`).onkeyup = passConfirm;
     }
-    document.getElementById(`password`).onkeyup = passConfirm;
-    document.getElementById(`confirm_password`).onkeyup = passConfirm;
-  }
 </script>
 </body>
 </html>
