@@ -21,6 +21,9 @@ import jakarta.persistence.*;
         @Column(nullable = false)
         private String password;
 
+        public User(String username, String email, String password, String defaultAvatar, String defaultBackground, int i) {
+        }
+
 
         public long getId() {
             return id;
