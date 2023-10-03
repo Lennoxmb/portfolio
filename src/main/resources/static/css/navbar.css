@@ -23,6 +23,8 @@
     padding-right: 5px;
     font-size: 1.1em;
     min-width: 33vw;
+    justify-content: end;
+    margin-right: 50px;
 }
 
 .menu-wrap ul {

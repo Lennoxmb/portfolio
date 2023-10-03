@@ -39,14 +39,14 @@
 <!--                    </li>-->
                 </ul>
             </li>
-            <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>
-            <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>
-            <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>
-            <li sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>
+<!--            <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>-->
+<!--            <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>-->
+<!--            <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>-->
+<!--            <li sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>-->
         </ul>
-        <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">
-            <button class="logout-btn" style="display: none">#</button>
-        </form>
+<!--        <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">-->
+<!--            <button class="logout-btn" style="display: none">#</button>-->
+<!--        </form>-->
     </div>
     <!--        <div id="menuToggle">-->
     <!--            <input type="checkbox" />-->
@@ -67,13 +67,13 @@
 
 
     <script>
-        const logOutForm = document.getElementById('logOutForm');
-        const logOutButton = document.getElementById('logOutButton');
+        // const logOutForm = document.getElementById('logOutForm');
+        // const logOutButton = document.getElementById('logOutButton');
         const dropdownContent = document.getElementById('dropdown-content');
 
-        logOutButton.addEventListener('click', () => {
-            logOutForm.submit();
-        });
+        // logOutButton.addEventListener('click', () => {
+        //     logOutForm.submit();
+        // });
 
         // Toggle the visibility of the dropdown content
         document.addEventListener('click', (event) => {
